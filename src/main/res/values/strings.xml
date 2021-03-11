@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FisioMed</string>
+    <string name="mainBtn">Press to Start</string>
+    <string name="GmailSignIn">Sign In with Gmail</string>
+    <string name="SignOut">Sign Out</string>
+    <string name="contexto">Contexto:</string>
+    <string name="comentarios">Comentarios:</string>
+
+    <string-array name="usuarios_array">
+        <item>Pedro</item>
+        <item>Batu</item>
+    </string-array>
+</resources>

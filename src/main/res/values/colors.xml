@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0065a3</color>
+    <color name="colorPrimaryDark">#00317e</color>
+    <color name="colorAccent">#e74424</color>
+    <color name="colorFC">#E74424</color>
+    <color name="colorBP">#B53636</color>
+    <color name="colorFR">#00317e</color>
+    <color name="editT">#5B0065A3</color>
+    <color name="gris">#676666</color>
+
+
+
+
+</resources>

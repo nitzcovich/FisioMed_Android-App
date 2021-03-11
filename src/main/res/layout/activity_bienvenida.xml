@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bienvenida">
+
+    <ImageButton
+        android:id="@+id/btn_hist"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/usuarios2"
+        app:layout_constraintEnd_toEndOf="@+id/button_lng"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_lng"
+        app:layout_constraintTop_toTopOf="@+id/btn_user"
+        app:srcCompat="@drawable/diagnosis" />
+
+    <ImageButton
+        android:id="@+id/button_hrt"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="56dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/button_lng"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tenemos"
+        app:srcCompat="@drawable/heart" />
+
+    <TextView
+        android:id="@+id/tenemos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Tenemos varias mediciones para ofrecerte:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tit_Inst_FC2" />
+
+    <TextView
+        android:id="@+id/tit_Inst_FC2"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:text="Hola!"
+        android:textAlignment="center"
+        android:textColor="#B3000000"
+        android:textSize="36sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Param_R"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:text="Frecuencia respiratoria"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_lng"
+        app:layout_constraintTop_toBottomOf="@+id/button_lng" />
+
+    <TextView
+        android:id="@+id/usuarios"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Datos usuario"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_user"
+        app:layout_constraintStart_toStartOf="@+id/btn_user"
+        app:layout_constraintTop_toBottomOf="@+id/btn_user"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/usuarios2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="Ver historial"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_hist"
+        app:layout_constraintStart_toStartOf="@+id/btn_hist"
+        app:layout_constraintTop_toTopOf="@+id/usuarios"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Param_C"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="Frecuencia cardíaca"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_hrt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_hrt" />
+
+    <ImageButton
+        android:id="@+id/button_lng"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="35dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_hrt"
+        app:layout_constraintTop_toTopOf="@+id/button_hrt"
+        app:srcCompat="@drawable/lung" />
+
+    <ImageButton
+        android:id="@+id/btn_user"
+        android:layout_width="120dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="64dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="@+id/button_hrt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_hrt"
+        app:layout_constraintTop_toBottomOf="@+id/Param_C"
+        app:srcCompat="@drawable/form" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.heartrate">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icono"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EditDataActivity"></activity>
+        <activity android:name=".GuardarFR" />
+        <activity android:name=".guardarFC" />
+        <activity android:name=".Historial" />
+        <activity android:name=".registro" />
+        <activity android:name=".ResultadosFR" />
+        <activity android:name=".ProcesamientoFR" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResultadosFC" />
+        <activity android:name=".ProcesamientoFC" />
+        <activity android:name=".InstruccFR" />
+        <activity android:name=".InstruccBP" />
+        <activity android:name=".InstruccFC" />
+        <activity android:name=".ParametrosRespiratorios" />
+        <activity android:name=".ParametrosCardiacos" />
+        <activity android:name=".Bienvenida" />
+        <activity android:name=".view_history" />
+        <activity android:name=".MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>

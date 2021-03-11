@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstruccFC">
+
+    <TextView
+        android:id="@+id/tit_Inst_FC"
+        android:layout_width="301dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="50dp"
+        android:text="Instrucciones"
+        android:textAlignment="center"
+        android:textColor="#B3000000"
+        android:textSize="36sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_iniciar_FC"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/colorFC"
+        android:text="Iniciar Medición"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/instruFC2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="-Asegúrese de cubrir la totalidad de la cámara y el flash."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruFC" />
+
+    <TextView
+        android:id="@+id/instruFC3"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:text="-No mueva el dedo hasta que la medición haya finalizado y se presente el resultado."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruFC2" />
+
+    <TextView
+        android:id="@+id/instruFC"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="-Coloque suavemente el dedo índice sobre la cámara."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tit_Inst_FC" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="299dp"
+        android:layout_height="230dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_iniciar_FC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruFC3"
+        app:srcCompat="@drawable/tutorial" />
+
+</android.support.constraint.ConstraintLayout>
